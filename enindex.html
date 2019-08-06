@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOAPROTOCOL</title>
+    <link rel="shortcut icon" href="./images/loaloa.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/enstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+</head>
+<body>
+    <aside>
+        <ul>
+            <li><div class="img"></div></li>
+            <li><a href="https://open.kakao.com/o/gcjHzKsb" target="_blank"><img src="./images/sns-1.png" alt="kakao shortcuts"></a></li>
+            <li><a href="https://t.me/LOAprotocol" target="_blank"><img src="./images/sns-2.png" alt="telegram shortcuts"></a></li>
+            <li><a href="https://www.instagram.com/loaprotocol/" target="_blank"><img src="./images/sns-3.png" alt="insta shortcuts"></a></li>
+            <li><a href="https://medium.com/@loaprotocol" target="_blank"><img src="./images/sns-4.png" alt="medium shortcuts"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCcReUg2evpIv9GwSW9BVaVg?view_as=subscriber" target="_blank"><img src="./images/sns-5.png" alt="youtube shortcuts"></a></li>
+        </ul>
+    </aside>
+    
+    <button class="top-btn"><img src="./images/topbtn.png" alt="main shortcuts"></button>
+
+    <header class="pc-header">
+        <div class="contents clearfix">
+            <a class="logo" href="./"><img src="./images/logo.png" alt="logo"></a>
+            <nav>
+                <ul class="nav-list clearfix">
+                    <li><a href="#main">LOA</a></li>
+                    <li><a href="#matrix">MATRIX</a></li>
+                    <li><a href="#roadmap">ROADMAP</a></li>
+                    <li><a href="#whitepaper">WHITEPAPER</a></li>
+                    <li><a href="#partner">PARTNER</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                </ul>
+            </nav>
+            <div class="select-wrap clearfix">
+                <div class="lang">
+                    <div class="wrap">
+                        <a class="on-lang" href="./enindex.html">ENG</a>
+                        <img src="./images/down-btn.png" alt="language selection">
+                    </div>
+                    <div class="wrap on-click">
+                        <div class="lang-box">
+                            <a class="close" href="./enindex.html">ENG</a>
+                            <a href="./index.html">KOR</a>
+                            <a href="./chindex.html">CHN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="m-header">
+        <div class="contents">
+            <a class="logo" href="./"><img src="./images/logo.png" alt="logo"></a>
+            <img class="menu" src="./images/menu.png" alt="menu">
+        </div>
+        <div class="m-back">
+            <nav class="m-nav">
+                <img class="m-close" src="./images/close.png" alt="close">
+                    <ul class="nav-list">
+                        <li><a href="#main">LOA</a></li>
+                        <li><a href="#matrix">MATRIX</a></li>
+                        <li><a href="#roadmap">ROADMAP</a></li>
+                        <li><a href="#whitepaper">WHITEPAPER</a></li>
+                        <li><a href="#partner">PARTNER</a></li>
+                        <li><a href="#team">TEAM</a></li>
+                    </ul>
+                    <ul class="lang-wrap clearfix">
+                        <li><a href="./index.html"><img src="./images/ko.jpg" alt="korea"><span>KO</span></a></li>
+                        <li><a href="./enindex.html"><img src="./images/en.jpg" alt="english"><span>EN</span></a></li>
+                        <li><a href="./chindex.html"><img src="./images/ch.jpg" alt="chinese"><span>CH</span></a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header> 
+   <div class="modal_apply_bg"></div>
+   <div class="modal_apply modal">
+       <button type="button" class="close"></button>
+       <h4 class="title">To Apply</h4>
+       <div class="info_wrap">
+           <input type="text" id="email" class="email" placeholder="E-mail (Please enter the e-mail address including @.)" >
+           <p class="check_text">Please enter the e-mail address including @.</p>
+           <div class="select_wrap">
+               <input type="radio" id="BIT" name="select" checked>
+               <label for="BIT"></label>
+               <span>BTC</span>
+           </div>
+           <div class="select_wrap">
+               <input type="radio" id="ETH" name="select">
+               <label for="ETH"></label>
+               <span>ETH</span>
+           </div>
+           <div class="text_wrap">
+               <input type="number" class="bit on" placeholder="Min 0.1BTC – Max 5BTC">
+               <input type="number" class="eth" placeholder="Min 3ETH - Max 100ETH">
+               <div class="text_bit on">BTC</div>
+               <div class="text_eth">ETH</div>
+               <p>
+                   <span class="about">≒</span>
+                   <span>0</span>
+                   <span>LOA</span>
+               </p>
+           </div>
+           <input type="text" class="wallet_email" placeholder="Wallet Address (Please enter the wallet address)">
+           <input type="text" class="wallet_email_check" placeholder="Confirmation of Wallet Address">
+           <p class="check_text">Wallet Address is different. Please check again.</p>
+           <input type="password" class="password" placeholder="Password">
+           <input type="password" class="password_check" placeholder="Confirmation of Password">
+           <p class="check_text">Password is different. Please check again.</p>
+           <input type="text" class="code" placeholder="Referee Code">
+       </div>
+       <div class="agree agree_invest">
+           <span>※ I agree to the <a href="#" class="accent accent_investment">precautions for investment</a>and the above details.</span>
+           <input type="checkbox" id="invest_agree_check">
+           <label for="invest_agree_check"></label>
+       </div>
+       <div class="agree agree_apply">
+            <span>※ I agree to the <a href="#" class="accent accent_application">application notice.</a></span>
+            <input type="checkbox" id="apply_agree_check">
+            <label for="apply_agree_check"></label>
+    </div>
+       <button type="button" class="popup_btn">To Apply</button>
+   </div>
+   <div class="apply_precaution modal investment">
+       <button type="button" class="precaution_close"></button>
+       <h4 class="title">Precautions for investment</h4>
+       <div class="precaution_bx">
+           <div class="precaution">
+               <h4>PRIVACY</h4>
+
+               <h5>1. General Provisions</h5>
+
+               <p class="precaution_title">A. Basic Principles</p>
+               a. LOA FOUNDATION PTE. LTD. ("LOA") seeks to comply with the applicable laws and regulations relating to personal data, including but not limited to the Personal Data Protection Act 2012 (Act No. 26 of 2012) of Singapore (collectively, the "Data Protection Legislation").
+               <br/>
+               b. This data privacy policy ("Data Privacy Policy") sets out the basis for collection, use, disclosure and processing of personal data by LOA. This policy will apply to the use of the website features, products and services provided by LOA (collectively, "Services") on [https://loaprotocol.io] ("Website"), excluding Services which may be subject to separate privacy policies which do not incorporate this Data Privacy Policy.
+               <br/>
+               c. In this Data Privacy Policy, (i) "personal data" means data, whether true or not, about an individual who can be identified from that data, or from that data and other information to which the organization has or is likely to have access, and (ii) "User" means you, the person using the Website or the Services, and if you are using the Website or the Services on behalf of an entity, references to "User" means you, that entity or both, as appropriate.
+               <br/>
+               d. Please read this Data Privacy Policy carefully. If there are any queries or feedback concerning this Data Privacy Policy, please contact LOA's Data Protection Officer at the email address set out at Article 20 below.
+               <br/>
+               <br/>
+               <h5>2. Collection OF PERSONAL DATA</h5>
+
+               <p class="precaution_title">A. Collection of Personal Data</p>
+               a. Personal data which LOA may collect include, without limitation, a User's name, address, nationality, email address, phone number, gender, birth date, ID card, online identifier (such as username), device unique identity, operating system or version, hardware information, cookie, browser information, date and time spent on the Services, history log and financial information (such as credit card numbers, bank account information and digital or crypto wallet address).
+               <br/>
+               b. LOA does not collect sensitive personal data (race, thoughts and beliefs, political beliefs, criminal records or medical records) which collection may constitute a violation of the fundamental human rights of the User.
+               <br/>
+               c. LOA collects personal data in a number of different ways. For example:
+               I. where a User signs up for a membership on the Website, LOA will collect such User's e-mail address and password; <br/>
+               II. as part of the know-your-customer ("KYC") process by LOA, LOA may collect a User's name, nationality, contact details, country of residence, date of birth, sex, photo, identity documents (such as national identification card, driver's license, passport, etc.) and wallet address. Where required by the applicable law, LOA will redact or delete personally identifiable numbers such as the national identification number, the driver’s license number and the passport number; <br/>
+               III. during a User's interaction with the Website or use of any of the Services, LOA may collect technical information relating to such User's device and browser, such as: (1) device make and model, and Internet Protocol address; (2) operating system version, browser type and browser language; and (3) browsing actions and patterns etc.; and<br/>
+               IV.. when a User contacts LOA (such as to report a problem with the Website or to provide feedback), LOA may keep a copy of the correspondence and any further information provided by such User. <br/>
+               <br/>
+               <p class="precaution_title">B. Method of Collection of Personal Data</p>
+               a. In relation to any User, LOA may collect personal data either: <br/>
+
+               I. when such User (or its authorized representative) voluntarily provides such personal data to LOA, for example, when completing the KYC process or when subscribing for the use of, or in the course of using, the Services; or<br/>
+               II. automatically, during such User's interaction with the Website and use of the Services.
+               <br/>
+               b. Where a User voluntarily provides any personal data or information, such User represents and warrants that:
+               <br/>
+               I. such personal data or information is accurate and complete; and<br/>
+               II. if such personal data or information relates to a third party, such User has obtained the consent of the said third party to the collection, use, disclosure and processing of such third party's personal data or information on the terms set forth in this Data Privacy Policy, and is duly authorized by the third party to provide such third party's personal data or information.
+               <br/>
+               <br/>
+               <p class="precaution_title">C. Consent</p>
+               a. By using the Services to which this Data Privacy Policy applies, or by submitting any personal data to LOA, the relevant User agrees that LOA may collect, use, disclose or otherwise process the personal data in accordance with this Data Privacy Policy.
+               <br/>
+               b. A User is deemed to have consented to the collection, use, disclosure and processing of the personal data in accordance with this Data Privacy Policy: 
+               <br/>
+               I. when such User (or its duly authorized representative) voluntarily provides the personal data; <br/>
+               II. when such User (or its duly authorized representative) is aware of the purpose for which the personal data is provided; <br/>
+               III. it is reasonable for such User (or its duly authorized representative) to have provided the personal data to LOA in the circumstances; or<br/>
+               iv. any other circumstances where the Data Protection Legislation provides for the deemed consent of such User. <br/>
+               <br/>
+               <h5>3. Purpose of Collection and Use of Personal Data</h5>
+
+               <p class="precaution_title">A. Purpose of Collection and Use of Personal Data</p>
+               a. LOA may collect and use personal data for any of the purposes as set forth below: 
+               <br/>
+               I. for LOA to perform its obligations in the course of, or in connection with, the provision of Services requested by the relevant Users; <br/>
+               II. verifying and authenticating the identity of its Users; <br/>
+               III. managing use of, or subscription to, the Services, including for example, creating and managing user accounts; <br/>
+               IV. providing, maintaining, improving and delivering content and Services. For example, LOA may collect anonymous analytics and statistical information from its users to verify the effectiveness of the Services, the frequency of access or conducting statistical analysis; <br/>
+               V. facilitating any potential token sale organized by LOA, including carrying out any KYC checks on potential purchasers and holders of such tokens; <br/>
+               VI.  where a User has agreed to receive marketing and advertising communications, informing such User of new service developments, customized services, events and other customized marketing and advertising information. <br/>
+               VII. communicating with Users, such as responding to, handling, and processing queries, requests, applications, complaints and feedback; <br/>
+               VIII. conducting investigations or internal audits, or taking action, including in relation to any violation of the laws or terms and conditions applicable to the use of the Website or any of the Services; <br/>
+               IX. complying with any applicable laws, regulations, codes of practice, guidelines or rules or to assist in law enforcement and investigations conducted by any governmental or regulatory authority; <br/>
+               X. any other purposes for which the relevant User has provided the personal data; <br/>
+               XI. transmitting to any third parties (including, for example, third party service providers and agents and relevant governmental and regulatory authorities, whether in Singapore or elsewhere) for the aforementioned purposes; and<br/>
+               XII. any other purposes which are necessary, ancillary or consequential to the above. <br/>
+               b. LOA may continue to collect, use, disclose or otherwise process personal data for any of the purposes listed above, even in situations where the User's relationship with LOA (for example, pursuant to a contract) has been terminated or altered in any way, for a reasonable period thereafter (including, where applicable, a period to enable LOA to enforce its rights against the User).
+               <br/>
+               c. LOA will collect, use, disclose and otherwise process the User's personal data only for the purposes set out in Article 5(a) and only to the extent allowed under the Data Protection Legislation. LOA will not collect, use, disclose and otherwise process the User's personal data for any other purpose save where:
+               <br/>
+               I. the User consents to such collection, use, disclosure and processing of the personal data; <br/>
+               II. the personal data has been processed to be personally unidentifiable, and will be used for statistical analysis; or <br/>
+               III. where such collection, use, disclosure and processing are otherwise required by law or upon lawful request by governmental authorities. <br/>
+               <br/>
+               <h5>4. Disclosure of Personal Data</h5>
+
+               <p class="precaution_title">A. Basic Principles of Sharing and Provision of Personal Data</p>
+               LOA may disclose personal data to third parties: <br/>
+               a. where such disclosure is required for LOA to perform its obligations in the course of or in connection with its provision of the Services requested by the User; or
+               b. where such disclosure is to a third-party service provider, agent or other organization performing any of the functions listed in Article 5 on behalf of LOA. <br/>
+               <br/>
+               <p class="precaution_title">B. Transfer of Personal Data outside of Singapore</p>
+               a. LOA shall only transfer personal data outside Singapore in accordance with the Data Protection Legislation. <br/>
+               b. Each User agrees, acknowledges and consents that due to the nature of the Services, personal data may be stored or processed in any country where LOA has operations (including but not limited to Singapore, the Republic of Korea) or engages third party service providers. <br/>
+               c. LOA may transfer personal data outside Singapore to countries which may have data protection rules that are different from those of Singapore. However, LOA shall take measures to ensure that any such transfers comply with the Data Protection Legislation, and such personal data remains protected to the standards described in this Data Privacy Policy. In certain circumstances, courts, law enforcement agencies, regulatory agencies or security authorities in those other countries may be entitled to access the personal data. <br/>
+               <br/>
+
+               <p class="precaution_title">C. Outsourced Handling of Personal Data</p>
+               LOA may outsource the handling of Users' personal data to third party service providers for the purposes of performing KYC checks, anti-money laundering checks, countering terrorism financing checks and/or any other checks as required by the applicable laws on the Users. For the purposes of such handling: <br/>
+               a. LOA may disclose and transmit the personal data to its third-party service provider. <br/>
+               b. LOA may disclose and transmit the following types of personal data to the third-party service providers. <br/>
+               c. The personal data may be disclosed and transmitted by LOA to the third-party service providers who will store and retain such personal data in not limited but including Singapore and the ROK <br/>
+               d. The personal data will be disclosed and transmitted to the third-party service provider immediately upon LOA's receipt of the personal data; and <br/>
+               e. The third-party service provider shall protect and retain the personal data in accordance with LOA's written instructions. <br/>
+               <br/>
+               <h5>5.Retention of the Personal Data</h5>
+
+               <p class="precaution_title">A. Basic Principles of Retention of the Personal Data</p>
+               a. LOA shall retain personal data for as long as is necessary to fulfill the purpose for which the personal data was collected, or as required or permitted by the applicable laws. <br/>
+               b. LOA will cease to retain personal data, and remove the means by which the personal data can be associated with individual Users, as soon as it is reasonable to assume that such retention no longer serves the purpose for which the personal data was collected, and is no longer necessary for legal or business purposes. <br/>
+               <br/>
+               <p class="precaution_title">B. Process and Method of Destruction of Personal Data</p>
+               a. LOA shall destroy the personal data in accordance with Article 10(b) within 5 days from the date when the period for retention of the personal data under Article 9 expires. <br/>
+               b. LOA will destroy the personal data by any of the following methods: <br/>
+               I. Personal data recorded or stored on paper: by shredding or by incinerating; or<br/>
+               II. Personal data stored electronically: by deleting the files permanently using technical methods such as low-level formatting so that the records cannot be recovered. <br/>
+               <br/>
+               <h5>6.Rights of Users</h5>
+
+               <p class="precaution_title">A. Right to Withdraw Consent to Collection, Use and Provision of Personal Data</p>
+               a. A User can withdraw his/her consent for the collection, use, disclosure and processing of personal data at any time by writing to LOA's Data Protection Officer at the email address set out at Article 20 below. <br/>
+               b. Upon receipt of the request to withdraw the User's consent, LOA will require a reasonable time to process the request and for LOA to notify the User of the consequences of such withdrawal, including any legal consequences which may affect the User's rights and liabilities. In general, LOA shall seek to process the request within 30 calendar days of receiving the same. <br/>
+               c. Depending on the nature and scope of the withdrawal of consent, in certain cases, LOA may not be able to continue providing the User with certain Services. <br/>
+               d. The User's withdrawal of consent does not affect LOA's right to continue to collect, use, disclose and process personal data where such collection, use, disclosure and processing without consent is permitted or required under the applicable laws. <br/>
+               <br/>
+               <p class="precaution_title">B. Request for Access to and Correction of Personal Data</p>
+               a. A User may make: <br/>
+               I. an access request, for a copy of that User's personal data which LOA holds, or for information about the ways in which LOA uses or discloses that User's personal data; or<br/>
+               II. a correction request, to correct or update any of the personal data which LOA holds about that User, <br/>
+               by contacting LOA's designated Data Protection Officer, whose details are set out at Article 20. <br/>
+               b. Where the User requests for correction or deletion of the personal data, LOA will not use or provide the personal data of that User until the correction or deletion of the personal data is complete, and will response to the User's request in good faith. If the correction or deletion is deemed to be necessary due to any errors in the personal data or expiration of the retention period, LOA will take necessary measures without delay. <br/>
+               c. LOA may ask the User to verify his/her identity and for more information about the request. Where LOA is legally permitted to do so, LOA may also refuse the request with or without providing the User with any reasons for doing so. <br/>
+               d. Where the User has made an access request, LOA may charge a reasonable administrative fee to cover the costs of responding to such request. If LOA decides to do so, LOA will provide the User with a written estimate of such fee before processing such request. <br/>
+               <br/>
+               <p class="precaution_title">C. Exercise of Rights by Proxy</p>
+               The User may exercise such User's rights under this Chapter 6 through his/her legal representative or agent. In this case, the User shall submit a power of attorney under the relevant Data Protection Legislation to LOA. <br/>
+               <br/>
+               <h5>7.Installation/Operation and Rejection of Automatic Data Collection Tools</h5>
+
+               <p class="precaution_title">A. Use of cookies, etc.</p>
+               a. LOA uses cookies or similar tracking technologies that authenticate, save and retrieve the User's access information. Cookies are small data files stored on the User's device by the Website or the Services, which also save readable information when the User visits the Website or uses LOA's services. <br/>
+               b. LOA uses the cookies for the following purposes: <br/>
+               I. maintenance of the User's access session; <br/>
+               II. analysis of service visits and uses; and<br/>
+               III. secured access. <br/>
+               c. The User has the option to install the cookies. Accordingly, the User may permit all cookies, or go through confirmation whenever the cookies are saved, or reject saving of all cookies, by configuring his/her web browser appropriately. However, if the User rejects the installation of the cookies, this may adversely affect the User's browsing experience, and the User may also face difficulties in using the Services. <br/>
+               <br/>
+               <h5>8.Protection of the Personal Data</h5>
+
+               <p class="precaution_title">A. Basic Principles of Protection of the Personal Data</p>
+               a. LOA shall take reasonable steps to secure and protect personal data in its possession by implementing measures to secure and protect such personal data as required to comply with the Data Protection Legislation, including: <br/>
+               I. reasonable security arrangements to prevent unauthorized access, collection, use, disclosure, copying, modification, disposal or similar risks to personal data; and<br/>
+               II. security precautions safeguarding all electronic storage and transmission of personal data. <br/>
+               b. While LOA strives to use commercially acceptable means to protect personal data, no method of transmission over the Internet or method of electronic storage is completely secure and LOA cannot ensure absolutely the security of any personal data in its possession or control. <br/>
+               c. To the fullest extent permitted by the law, LOA shall not be liable in any manner for any losses arising from any unauthorized collection, use, disclosure or otherwise processing of personal data. <br/>
+               d. LOA shall not be held responsible for the acts, omissions, data policies or use of cookies by any third party, or the content or security of any third-party websites (even if linked from the Website). Any such liability is expressly disclaimed and excluded to the fullest extent permitted under the law. <br/>
+               <br/>
+               <p class="precaution_title">B. Minimum Staff and Staff Training</p>
+               LOA limits the staff handling the personal data to the staff-in-charge, and for this purpose, LOA assigns a separate password which is reset on a regular basis. In addition, LOA always stresses compliance with this Data Privacy Policy through frequent training of the staff-in-charge. <br/>
+               <br/>
+               <p class="precaution_title">C. Establishment and Execution of Internal Management Plan</p>
+               LOA has established and is executing an internal management plan to ensure secured processing of the personal data. <br/>
+               <br/>
+               <p class="precaution_title">D. Encryption of Personal Data, etc.</p>
+               The User's personal data is encrypted for storage and management, such that only the User and the appropriate LOA staff have access to it.
+               <br/>
+               <p class="precaution_title">E. Restriction on Access to Personal Data</p>
+               LOA takes reasonable measures to control access to the personal data by granting, changing or revoking access to the database system that processes the personal data as necessary, and controls unauthorized access from external networks by using firewalls. 
+               <br/>
+               <br/>
+               <h5>9.Contact information</h5>
+
+               <p class="precaution_title">A. Data Protection Officer</p>
+               The User may notify the following staff of any complaint related to the protection of personal data that may occur when using the Services, or to request for access to or correction of personal data: <br/>
+               Name: Ethan Han <br/>
+               Position: CEO  <br/>
+               E-mail: admin@loaprotocol.io <br/>
+               <br/>
+               <h5>10.Miscellaneous</h5>
+
+               <p class="precaution_title">A. Public Notice and Notification of Data Privacy Policy</p>
+               a. If LOA amends the Data Privacy Policy, LOA will notify all Users of the reason for the amendment and the details through a "Public Notice" electronic bulletin board managed/operated by LOA, at least 7 days before the amendment; provided, that if there is an important change in the Users' rights with regard to the collection and use of the personal data, LOA will notify the Users at least 30 days before the amendment. <br/>
+               b. If LOA wishes to obtain additional consent from the User in order to use the personal data or outsource handling of the personal data to a third-party service provider beyond the scope agreed by the User, LOA will individually give the Users a written notice prior to doing so. <br/>
+               c. If LOA outsources the collection, storage, processing, use, provision, management, and destruction, etc. of the personal data to a third party, LOA will notify the User of the same through in writing or through this Data Privacy Policy. <br/>
+               <br/>
+               <p class="precaution_title">B. Remedies Available for Violation of Rights and Interests</p>
+               The User may make inquiries about remedies or consultations available for infringement on the personal data to the institutions set forth below, which are independent from LOA. If the User is not satisfied with the results of LOA's own handling the complaints or the remedy related to the personal data or needs more information, he/she may contact the Personal Data Protection Commission of Singapore at the contact details set out on https://www.pdpc.gov.sg/.   <br/>
+
+               <h4>TERMS OF USE</h4>
+               <br/>
+               <h5>1. General Provisions</h5>
+
+               <p class="precaution_title">A. Purpose</p>
+               The purpose of these General Terms and Conditions for LOA Services ("Terms and Conditions") is to set forth the rights, obligations and responsibilities of LOA FOUNDATION PTE. LTD. ("LOA") and the User (as defined below) in relation to the use of the website features, products and services provided by LOA on the Website (collectively, "Services"). <br/>
+               <br/>
+               <p class="precaution_title">B. Application</p>
+               a. These Terms and Conditions shall apply to all the Services, excluding Services which may have separate terms and conditions and which do not incorporate these Terms and Conditions. <br/>
+               b. In relation to any User, these Terms and Conditions shall be effective immediately upon the earlier of (i) the initial use of such Services, and (ii) the acceptance of these Terms and Conditions by the User. <br/>
+               <br/>
+               <p class="precaution_title">C. Definitions</p>
+               Unless the context otherwise requires, the following definitions shall apply in these Terms and Conditions: <br/>
+               <strong>"Application"</strong> means the electronic means through which a User may access the Services on a mobile device. <br/>
+               <strong>"Data Privacy Policy"</strong> means the privacy policy published on the Website. <br/>
+               <strong>"KYC Checks"</strong>means know-your-customer checks as required by the applicable laws, including but not limited to any applicable anti-money laundering rules and any applicable countering the financing of terrorism rules. <br/>
+               <strong>"Member"</strong> means the User who accesses the Website and who has been registered with LOA as a member pursuant to Chapter 2. <br/>
+               <strong>"Private Key"</strong> means the number decoding the Public Key-encoded information. <br/>
+               <strong>"Public Key"</strong> means a unique number that specifies the Wallet and which is disclosed to the public. <br/>
+               <strong>"Services"</strong> has the meaning given to it in Article 1. <br/>
+               <strong>"Tokens"</strong> means the ERC-20 standard tokens known as "LOAPROTOCOL tokens", which LOA intends to issue. <br/>
+               <strong>"User"</strong> means you, the person using the Website or the Services, and if you are using the Website or Services on behalf of an entity, references to "User" means you, that entity or both, as appropriate. <br/>
+               <strong>"Wallet"</strong> means the technical solution to store the private and public keys of the wallet and to send and receive cryptographic digital tokens such as the Tokens. "Website" means the website located at [https://loaprotocol.io/].<br/>
+               <br/>
+               <p class="precaution_title">D. Amendment of the Terms and Conditions</p>
+               a. LOA may amend the Terms and Conditions at any time without notice to the Users. <br/>
+               b. Upon any amendment to these Terms and Conditions, (i) the amended part of these Terms and Conditions shall be compared against previous Terms and Conditions and distinguished for disclosure, and (ii) the latest version of the these Terms and Conditions (incorporating the latest amendments) shall be displayed on the main page of the Website and shall become effective as of the moment the such latest version is displayed if not otherwise specified by LOA. <br/>
+               c. If any User does not agree to the amended Terms and Conditions, (i) such User should cease use of the Website and the Services and (ii) if such User is a Member, such User should withdraw from the membership. To the fullest extent permitted by the applicable laws, by continuing to use the Website or the Services after these Terms and Conditions are amended, such User shall be deemed to have agreed to be bound by the amended Terms and Conditions. <br/>
+               <br/>
+               <h5>2.Application for Membership</h5>
+
+               <p class="precaution_title">A. Registration as a Member</p>
+               a. Access to certain Services requires the relevant User to register with LOA as a Member. <br/>
+               b. Any User who wishes to register as a Member must: <br/>
+               I. submits an application for membership via the Website; <br/>
+               II. accept these Terms and Conditions and the Data Privacy Policy; and<br/>
+               III. provide the relevant information requested by LOA in connection with such User's       application, which shall include, without limitation, ID, password, e-mail address and the    information required by LOA for its KYC Checks, such as name, nationality, gender, date    of birth, identification card, country of residence, video (image) information and address    of the Wallet owned and controlled by the User. <br/>
+               c. By applying for membership, th
+               `e applicant: <br/>
+               I. represents and warrants that all information submitted during the application process is true and accurate; <br/>
+               II. consents to the collection, use and disclosure of such applicant's personal data in accordance with the Data Privacy Policy; and<br/>
+               III. undertakes to: <br/>
+               1. ensure that all information submitted to LOA from time to time remains accurate and updated; <br/>
+               2. maintain the security and prevent the misuse of any membership credentials issued by LOA in connection with the use of the Website and the Services; <br/>
+               3. be fully responsible for, and bound by, any and all use of the Website and the Services referable to such User's membership, whether or not authorized by such User; and<br/>
+               4. comply with and be bound by these Terms and Conditions and the Data Privacy Policy. <br/>
+
+               <br/>
+               <p class="precaution_title">B. Review of application for membership</p>
+               a. Upon receipt of an application for membership, LOA shall as soon as practicable review the application and notify the applicant of whether such application has been accepted. Whilst LOA intends to notify the applicant of the results of the application within 2019.08.31 calendar days from the date of submission of the application and all required documents, there may be a delay in the event that there is a high volume of applications. <br/>
+               b. LOA reserves the sole discretion to reject any application for membership for any reason and to withhold information concerning such decision. <br/>
+               <br/>
+               <h5>3.Services</h5>
+
+               <p class="precaution_title">A. My Page</p>
+               The function of My Page will be provided only to Members. <br/>
+               <br/>
+               <p class="precaution_title">B. Application</p>
+               Certain Services are only accessible via the Application. Accordingly, a User must install the Application on such User's mobile device in order to access such Services. <br/>
+               <br/>
+               <p class="precaution_title">C. Cryptocurrency Wallet</p>
+               In the event that LOA provides a cryptocurrency wallet service, LOA intends to only (i) make such service available via the Application, and (ii) to issue one Private Key and one Public Key per account. <br/>
+               <br/>
+               <p class="precaution_title">D. Dashboard</p>
+               The function of dashboards will be provided only to the Member. <br/>
+               <br/>
+               <p class="precaution_title">E. Newsletter</p>
+               Newsletters will be provided only to Users who have provided their e-mail address and who have consented to receive such newsletters. <br/>
+               <br/>
+               <h5>4.Modification, Withdrawal or Termination of Membership</h5>
+
+               <p class="precaution_title">A. Modification</p>
+               Any Member may modify the information provided by such Member to LOA via the Website via the dashboard on the Website or through such other means specified by LOA from time to time. <br/>
+               To the fullest extent permitted by the applicable laws, save for information which may be required to be retained by LOA for its legal and business purposes, any information provided prior to the modification shall be destroyed within 7 calendar days from the date of application for the modification. <br/>
+               <br/>
+               <p class="precaution_title">B. Withdrawal</p>
+               Any User may withdraw as a Member by submitting a withdrawal application to LOA via email to support@loaprotocol.io. Upon successful withdrawal, such User's membership shall be deemed terminated on and from the date of withdrawal. <br/>
+               To the fullest extent permitted by the applicable laws, save for information which may be required to be retained by LOA for its legal and business purposes, all other information provided by the Member to LOA in connection with such Member's membership will be destroyed within 7 days from the date of withdrawal. As an example, the information on the cryptocurrency that is to be received by the Member will not be destroyed. <br/>
+               <br/>
+               <p class="precaution_title">C. Suspension and Termination</p>
+               LOA reserves the right, exercisable in its sole discretion at any time without prior notice, to suspend, restrict or terminate (as the case may be) the membership of any Member in the event that LOA becomes aware (or suspects) that such Member has breach any of these Terms and Conditions. To the fullest extent permitted by the applicable laws, such right shall be exercisable by LOA without owing any liability to the Member. <br/>
+               <br/>
+               <h5>5.Objection</h5>
+
+               <p class="precaution_title">A. Objection</p>
+               If a User has any query, feedback or objection relating to the use of the Services, such User may contact LOA by sending an email, enclosing all relevant information, to support@loaprotocol.io. LOA shall seek to respond to such email as soon as practicable. <br/>
+               <br/>
+               <h5>6.Liability</h5>
+
+               <p class="precaution_title">A. Limitation of Responsibility and Liability</p>
+               a. The Website and the Services are provided on an "as is" and "as available" basis. No representations or warranties of any kind, implied, express or statutory, including the warranties of non-infringement of third-party rights, title, merchantability, satisfactory quality or fitness for a particular purpose, are given in conjunction with the Website or any of the Services. <br/>
+               b. The information on the Website is provided for reference only and is not intended to replace or serve as substitute for any legal, technical, financial or professional advice. Such information contains statements that are based on the information and resources available at the time of writing from sources believed to be reliable. To the fullest extent permitted by the applicable laws, LOA does not accept any liability arising from any inaccuracy or omission in or the use of or reliance on the information on the Website. <br/>
+               c. Where the Website contains hyperlinks to third-party websites, such third-party websites are independent from this Website and the use of such hyperlinks is entirely at the User's own risk. LOA accepts no responsibility for the content, or the use of, such third-party websites and shall not be liable for any loss or damage caused or alleged to be caused by or in connection with use of or reliance on any content, products or services available on or through any of these third-party websites. <br/>
+               <br/>
+               <p class="precaution_title">B. Indemnification</p>
+               To the fullest extent permitted by the applicable laws, in relation to any User, LOA shall not be liable for: <br/>
+
+               a. any non-performance, error, interruption or delay in the performance of its obligations under these Terms and Conditions (including, without limitation, the provision of the Services) if this is due, whether in whole or in part, to a circumstance or event beyond its reasonable control; <br/>
+               b. any failure to use the Services and any failure relating to the transfer of cryptographic digital tokens due to any causes attributable to such User; <br/>
+               c. the loss of any benefit which such User expected to acquire through the Services; and<br/>
+               d. such User's loss of, or failure to secure, the Private Key to such User's Wallet. <br/>
+               <br/>
+               <h5>7.Miscellaneous</h5>
+
+               <p class="precaution_title">A. Intellectual Property</p>
+               The intellectual property rights in the Website and to the Services are owned, licensed to or controlled by LOA and the respective third-party proprietors. The content on this Website may not be modified, reproduced, displayed, broadcast, hyperlinked, mirrored, framed, transferred or transmitted in any manner without the prior written permission from us or the relevant third-party proprietors. <br/>
+               <br/>
+               <p class="precaution_title">B. Data Privacy Policy</p>
+               Personal data of each User will be collected, used and disclosed in accordance with the Data Privacy Policy. <br/>
+               <br/>
+               <p class="precaution_title">C. Language</p>
+               In the event that these Terms and Conditions are translated or entered into in any language other than English, the English language version of these Terms and Conditions shall govern and shall take precedence over the translated version. <br/>
+               <br/>
+               <p class="precaution_title">D. Notices</p>
+               All agreements, notices, disclosures, and other communications by LOA to the Users including these Terms and Conditions, will be in electronic form. <br/>
+               <br/>
+               <p class="precaution_title">E. Rights of Third Parties</p>
+               In relation to any User, except as otherwise provided herein, no person, other than such User, LOA and its related corporations, shall have any right to enforce any provision of these Terms and Conditions under the Contracts (Rights of Third Parties) Act (Cap. 53B) of Singapore or any similar legislation in any jurisdiction. <br/>
+               <br/>
+               <p class="precaution_title">F. Severance</p>
+               If at any time any provision of these Terms and Conditions is or becomes illegal, invalid or unenforceable in any respect, the legality, validity and enforceability of the remaining provisions of these Terms and Conditions shall not be affected or impaired thereby, and shall continue in force as if such illegal, invalid or unenforceable provision was severed from these Terms and Conditions. <br/>
+               <br/>
+               <p class="precaution_title">G. Waiver</p>
+               No waiver of any term, provision or condition of these Terms and Conditions by LOA shall be effective unless such waiver is evidenced in writing and signed by LOA. No omission or delay on the part of LOA in exercising any right, power or privilege hereunder shall operate as a waiver thereof, nor shall any single or partial exercise of any such right, power or privilege preclude any other or further exercise thereof or of any other right, power or privilege. The rights and remedies herein provided are cumulative and not exclusive of any rights or remedies provided by law. <br/>
+               <br/>
+               <h5>8.Governing Law and Dispute Resolution</h5>
+
+               <p class="precaution_title">A. Governing Law</p>
+               These Terms and Conditions and any non-contractual obligations arising out of or in connection with these Terms and Conditions shall be governed by and construed in accordance with the laws of Singapore (without regard to its conflict of laws principles). <br/>
+               <br/>
+               <p class="precaution_title">B. Dispute Resolution</p>
+               Any dispute arising out of or in connection with these Terms and Conditions (including, without limitation, the enforceability of this arbitration clause and any question regarding its existence, validity or termination) shall be referred to and finally resolved by arbitration administered by the Singapore International Arbitration Centre in accordance with the Arbitration Rules of the Singapore International Arbitration Centre for the time being in force, which rules are deemed to be incorporated by reference in this arbitration clause. The seat of the arbitration shall be Singapore. The arbitral tribunal shall consist of 1 arbitrator. The language of the arbitration shall be English. <br/>
+               The International Arbitration Act (Cap. 143A), as amended from time to time, shall apply to any arbitration proceedings commenced under these Terms and Conditions. <br/>
+           </div>
+       </div>
+   </div>
+   <div class="apply_precaution modal application">
+    <button type="button" class="precaution_close"></button>
+    <h4 class="title">CAUTIONS</h4>
+    <div class="precaution_bx">
+        <div class="precaution">
+            <h4>DISCLAIMER</h4>
+            The following sections include legal considerations you must read carefully before (I) making use of the whitepaper and any information available on the website, (II) participating in Loa token sale as outlined in the whitepaper and our official website.
+            <h5>DISCLAIMER OF LIABILITY</h5>
+            "LOA PROTOCOL" specifically disclaims liability for any indirect, incidental, consequential losses in income, revenue, profits or loss of use or data, suffered by any person as a result of the use of any information or the content in this whitepaper or on the website, or using any service provided by LOA PROTOCOL.
+            <h5>NO REPRESENTATIONS AND WARRANTIES</h5>
+            "LOA PROCOTOL" does not make or purport to make, and hereby disclaims, any representation, warranty or undertaking in any form whatsoever to any entity or person, including any representation, warranty or undertaking in relation to the truth, accuracy and completeness of any of the information set out in this whitepaper.
+            <h5>REPRESENTATIONS AND WARRANTIES BY YOU</h5>
+            By accessing any information in this whitepaper, running your application on LOA Flatform, trading LOA coins and tokens defined by any participants in LOA PROTOCOL, you represent and warrant to LOA PROCOTOL as follows:
+            <br>
+            •	You agree and acknowledge that the LOA tokens do not constitute securities in any form in any jurisdiction; The whitepaper is not intended to constitute an offer of securities in any jurisdiction or a solicitation for investment in securities. You agree that participating in LOA Platform, in any way possible, entails no entering into any contract or binding legal commitment and no accepting any cryptocurrency or any other payment based on this whitepaper.
+            <br>
+            •	You agree and acknowledge that no regulatory authority has examined or approved of the information set out in this whitepaper, no action has been or will be taken under the laws, regulatory requirements or rules of any jurisdiction and the publication, distribution or dissemination of this whitepaper to you does not imply that the applicable laws, regulatory requirements or rules have been complied with;
+            <br>
+            •	You agree and acknowledge that this whitepaper, the undertaking and/or the completion of the LOA PROCOTOL Initial Token Sale, or future trading of the LOA tokens on any cryptocurrency exchange, shall not be construed, interpreted or deemed by you as an indication of the merits of the LOA PROCOTOL, the LOA tokens, the LOA PROCOTOL Token Sale (each as referred to in this whitepaper);
+            <br>
+            •	The distribution or dissemination of this whitepaper, participating in LOA by designing a project based on this platform or trading the tokens, mining or any other business activity, is not prohibited or restricted by the applicable laws, regulations or rules in the jurisdiction of your country, and where any restrictions in relation to possession are applicable, you have observed and complied with all such restrictions at your own expense and without liability to LOA PROCOTOL;
+            <br>
+            •	You agree and acknowledge that in the case where you wish to purchase any LOA tokens, the LOA tokens are not to be construed, interpreted, classified or treated as:
+            <br>
+            (i) any kind of currency other than cryptocurrency;
+            <br>
+            (ii) debentures, stocks or shares issued by any person or entity (LOA PROCOTOL)
+            <br>
+            (iii) rights, options or derivatives in respect of such debentures, stocks or shares;
+            <br>
+            (iv) rights under a contract for differences or under any other contract the purpose or pretended purpose of which is to secure a profit or avoid a loss;
+            <br>
+            (v) units in a collective investment scheme;
+            <br>
+            (vi) units in a business trust;
+            <br>
+            (vii) derivatives of units in a business trust;
+            <br>
+            (viii) any other security or class of securities.
+            <br>
+            •	You are fully aware of and understand that you are not eligible to purchase any LOA tokens if you are a citizen, resident (tax or otherwise) or green card holder of the United States of America or a citizen or resident of the Republic of Singapore;
+            <br>
+            •	You at least have a basic degree of understanding of the operation, functionality, usage, storage, transmission mechanisms and other material characteristics of cryptocurrencies, blockchain-based software systems, cryptocurrency wallets or other related token storage mechanisms, blockchain technology and smart contract technology;
+            <br>
+            •	You are fully aware and understand that in the case where you wish to purchase any LOA tokens, there are risks associated with LOA PROCOTOL and its respective business and operations, the LOA tokens, the LOA PROCOTOL Token Sale (each as referred to in the whitepaper);you agree and acknowledge that LOA PROCOTOL is not liable for any indirect, special, incidental, consequential or other losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue, income or profits, and loss of use or data), arising out of or in connection with any acceptance of or reliance on this whitepaper or any part thereof by you;
+            <br>
+            •	You guarantee that you are a legally capable person of a majority age and complies with legal rules where you live,
+            <br>
+            •	and all of the above representations and warranties are true, complete, accurate and not misleading at the time of your access to and/or acceptance of possession this whitepaper or such part thereof (as the case may be).
+            <br>
+            <p class="precaution_title">CAUTIONARY NOTE ON FORWARD-LOOKING STATEMENTS</p>
+            <br>
+            All statements contained in this whitepaper, statements made in press releases or in any place accessible by the public and oral statements that may be made by LOA PROCOTOL or its respective directors, executive officers or employees acting on behalf of LOA PROCOTOL (as the case may be), that are not statements of historical fact, constitute “forward-looking statements”. Some of these statements can be identified by forward-looking terms such as “aim”, “target”, “anticipate”, “believe”, “could”, “estimate”, “expect”, “if”, “intend”, “may”, “plan”, “possible”, “probable”, “project”, “should”, “would”, “will” or other similar terms. However, these terms are not the exclusive means of identifying forward-looking statements. All statements regarding LOA PROCOTOL’s financial position, business strategies, plans and prospects and the future prospects of the industry which LOA PROCOTOL is in are forward-looking statements. These forward-looking statements, including but not limited to statements as to LOA PROCOTOL’s revenue and profitability, prospects, future plans, other expected industry trends and other matters discussed in this whitepaper regarding LOA PROCOTOL are matters that are not historical facts, but only predictions. These forward-looking statements involve known and unknown risks, uncertainties and other factors that may cause the actual future results, performance or achievements of LOA PROCOTOL to be materially different from any future results, performance or achievements expected, expressed or implied by such forward-looking statements. These factors include, amongst others:
+            <br>
+            •	changes in political, social, economic and stock or cryptocurrency market conditions, and the regulatory environment in the countries in which LOA PROCOTOL conducts its respective businesses and operations;
+            <br>
+            •	the risk that LOA PROCOTOL may be unable or execute or implement their respective business strategies and future plans;
+            <br>
+            •	changes in interest rates and exchange rates of fiat currencies and cryptocurrencies;
+            <br>
+            •	changes in the anticipated growth strategies and expected internal growth of LOA PROCOTOL;
+            <br>
+            •	changes in the availability and fees payable to LOA PROCOTOL in connection with their respective businesses and operations;
+            <br>
+            •	changes in the availability and salaries of employees who are required by LOA PROCOTOL to operate their respective businesses and operations;
+            <br>
+            •	changes in preferences of customers of LOA PROCOTOL;
+            <br>
+            •	changes in competitive conditions under which LOA PROCOTOL operate, and the ability of LOA PROCOTOL to compete under such conditions;
+            <br>
+            •	changes in the future capital needs of LOA PROCOTOL and the availability of financing and capital to fund such needs;
+            <br>
+            •	war or acts of international or domestic terrorism;
+            <br>
+            •	occurrences of catastrophic events, natural disasters and acts of God that affect the businesses and/or operations of LOA PROCOTOL;
+            <br>
+            •	other factors beyond the control of LOA PROCOTOL;
+            <br>
+            •	any risk and uncertainties associated with LOA PROCOTOL and their businesses and operations, the LOA tokens, the LOA PROCOTOL Initial Token (each as referred to in the whitepaper).
+            <br>
+            All forward-looking statements made by or attributable to LOA PROCOTOL or persons acting on behalf of LOA PROCOTOL are expressly qualified in their entirety by such factors. Given that risks and uncertainties that may cause the actual future results, performance or achievements of LOA PROCOTOL to be materially different from that expected, expressed or implied by the forward-looking statements in this whitepaper, undue reliance must not be placed on these statements. These forward-looking statements are applicable only as of the date of this whitepaper.
+            <br>
+            Neither LOA PROCOTOL, the distributor nor any other person represents, warrants and/or undertakes that the actual future results, performance or achievements of LOA PROCOTOL will be as discussed in those forward-looking statements. The actual results, performance or achievements of LOA PROCOTOL may differ materially from those anticipated in these forward-looking statements.
+            <br>
+            Nothing contained in this whitepaper is or may be relied upon as a promise, representation or undertaking as to the future performance or policies of LOA PROCOTOL. Further, LOA PROCOTOL disclaims any responsibility to update any of these forward-looking statements or publicly announce any revisions to these forward-looking statements to reflect future developments, events or circumstances, even if new information becomes available or other events occur in the future.
+            <br>
+            <p class="precaution_title">MARKET AND INDUSTRY INFORMATION AND NO CONSENT OF OTHER PERSONS</p>
+            <br>
+            This whitepaper and our official website may include market and industry information and forecasts that have been obtained from internal surveys, reports and studies, where appropriate, as well as market research, publicly available information and industry publications. Such surveys, reports, studies, market research, publicly available information and publications generally state that the information that they contain has been obtained from sources believed to be reliable, but there can be no assurance as to the accuracy or completeness of such included information.
+             While LOA PROCOTOL has taken reasonable actions to ensure that the information is extracted accurately and in its proper context, LOA PROCOTOL has not conducted an independent review of the information extracted from third party sources, verified the accuracy or completeness of such information or ascertained the underlying economic assumptions relied upon therein. Consequently, neither LOA PROCOTOL, the distributor, nor their respective directors, executive officers and employees acting on their behalf makes any representation or warranty as to the accuracy or completeness of such information and shall not be obliged to provide any updates on the same.
+            <br>
+            <p class="precaution_title">NO ADVICE</p>
+            <br>
+            No information in this whitepaper should be considered to be business, legal, financial or tax advice regarding LOA PROCOTOL, the distributor, the LOA tokens, the LOA PROCOTOL Initial Token Sale (each as referred to in the whitepaper). You should consult your own legal, financial, tax or other professional advisers regarding LOA PROCOTOL and its respective businesses and operations, the LOA tokens, the LOA PROCOTOL Initial Token Sale (each as referred to in the whitepaper). You should be aware that you may be required to bear the financial risk of any purchase of LOA tokens for an indefinite period of time.
+            <br>
+            <p class="precaution_title">NO FURTHER INFORMATION OR UPDATE</p>
+            <br>
+            LOA PROCOTOL is not liable for any given information or representation not contained in this whitepaper by any person or promises made by any person regarding the future prices of LOA tokens in the market or the success of any business by others using the LOA platform in any possible way. The LOA PROCOTOL Initial Token Sale (as referred to in the whitepaper) shall not, under any circumstances, constitute a continuing representation or create any suggestion or implication that there has been no change, or development reasonably likely to involve a material change in the affairs, conditions and prospects of LOA PROCOTOL or in any statement of fact or information contained in this whitepaper since the date hereof.
+            <br>
+            <p class="precaution_title">RESTRICTIONS ON DISTRIBUTION AND DISSEMINATION</p>
+            <br>
+            The distribution or dissemination of this whitepaper, wholly or partially, may be subject to statutory restrictions in some legal systems. Individuals accessing this whitepaper from a legal system in which the restrictions apply should inform themselves about these restrictions and observe them accordingly.
+            <br>
+            Persons to whom a copy of this whitepaper has been distributed or disseminated, provided access to or who otherwise have the whitepaper in their possession shall not circulate it to any other persons, reproduce or otherwise distribute this whitepaper or any information contained herein for any purpose whatsoever nor permit or cause the same to occur.
+            <br>
+            <p class="precaution_title">RISKS AND UNCERTAINTIES</p>
+            <br>
+            Prospective purchasers of LOA tokens (as referred to in this whitepaper) should carefully consider and evaluate all risks and uncertainties associated with LOA PROCOTOL, the distributor and their respective businesses and operations, the LOA tokens, the LOA PROCOTOL Initial Token Sale (each as referred to in the whitepaper), all information set out in this whitepaper and the T&Cs prior to any purchase of LOA tokens. If any of such risks and uncertainties develop into actual events, the business, financial condition, results of operations and prospects of LOA PROCOTOL could be materially and adversely affected. In such cases, you may lose all or part of the value of the LOA tokens.
+             No US Citizens are eligible to take part in this ICO unless they have permission from their regulatory bodies.
+            <br>
+            <p class="precaution_title">LOA STOCK DISCLAIMER</p>
+            <br>
+            The assigned LOA Stock tokens to the contributors will be added automatically to their account balances set in their profiles. These tokens are rewards to appreciate the contributors to the LOA platform project. For the LOA Stock tokens, some legal permissions are needed, the tokens will be visible on the users' accounts as their balances, but it’s not possible to withdraw or release these tokens until the legal permissions are granted to the project. After we get the permissions for the LOA Stock tokens the users will be notified through an announcement in social media of LOA Platform project, that is when the users will be able to withdraw their tokens. In case the project couldn’t get the legal permissions for any reason, instead of every LOA Stock token, four Rental Processor tokens will be assigned to the contributors. For this reason, it’s obvious that the LOA Platform project has no obligation for definitive release and delivering LOA Stock tokens, and the contributors approve this possible condition when they studied disclaimer sections, therefore deprived themselves of their right to claim the LOA Stock tokens.
+            </div>
+    </div>
+  </div>
+   <div class="modal_apply_success modal">
+       <button type="button" class="close"></button>
+       <h4 class="title">Completed</h4>
+       <p class="info">Your application has been received as normal.</p>
+       <p class="info">Please send as much as the requested amount to your wallet address below.</p>
+       <p class="info">Thank you.</p>
+       <div class="address">
+           <div class="address_coin">
+               <strong>Application quantity</strong>
+               <p>
+                   <span>0.1 BTC </span> = About
+                   <span>50,000</span> 
+                   LOA
+               </p>
+           </div>
+           <div class="address_coin">
+               <strong>BTC Address</strong>
+               <p>3BChGX9FeZpbC1xrpqLVXeN1fwk224pgjG
+                   <span class="address_copy"></span>
+               </p>
+           </div>
+           <div class="address_coin">
+               <strong>ETH Address</strong>
+               <p>0xBef88611B7590d9b776523D9898f6C4649399840
+                   <span class="address_copy"></span>
+               </p>
+           </div>
+       </div>
+       <button type="button" class="popup_btn">lookup</button>
+   </div>
+   <div class="modal_lookup modal">
+       <button type="button" class="close"></button>
+       <h4 class="title">To Query</h4>
+       <div class="info_wrap">
+           <input type="text" class="email" placeholder="E-mail (Please enter the e-mail address including @.)">
+           <input type="password" class="password" placeholder="Password">
+           <a class="forget">Did you forget your password?</a>
+       </div>
+       <button type="button" class="popup_btn">Confirm</button>
+   </div>
+   <div class="apply_passwordforget modal">
+       <button type="button" class="apply_passwordforget_close"></button>
+       <h4 class="title">LOA PROTOCOL SUPPORT</h4>
+       <div class="info_wrap">
+           <p class="passwordforget_title">Please send me an e-mail with the registered e-mail when you sign up.</p>
+           <p>here to send : <span>support@loaprotocol.io</span></p>
+           <p>Contents : [Subscription Email] We will request password recovery.</p>
+       </div>
+   </div>
+   <div class="modal_lookup_success customer modal">
+       <button type="button" class="close"></button>
+       <h4 class="title">Check completed</h4>
+       <p class="lookup_success_email">K.flower8101@gmail.com</p>
+       <div class="lookup_success_bx">
+            <div class="address_bit">
+                <strong>Application quantity</strong>
+                <p class="address_detail">
+                    <span>0.1 BTC </span> = About
+                    <span>50,000</span> 
+                    LOA
+                </p>
+            </div>
+           <div class="address_bit">
+               <strong>BTC COIN</strong>
+               <p class="address_detail">3BChGX9FeZpbC1xrpqLVXeN1fwk224pgjG
+                   <span class="address_copy"></span>
+               </p>
+           </div>
+           <div class="address_eth">
+               <strong>ETH COIN</strong>
+               <p class="address_detail">0xBef88611B7590d9b776523D9898f6C4649399840
+                   <span class="address_copy"></span>
+               </p>
+           </div>
+           <p class="coin_bit">
+               <strong><span class="num">0</span>BTC</strong>
+               <span>Deposit</span>
+           </p>
+           <p class="coin_eth">
+               <strong><span class="num">0</span>ETH</strong>
+               <span>Deposit</span>
+           </p>
+           <p class="coin_loa">
+               <span class="num">0</span>
+               <span>LOA</span>
+           </p>
+           <p class="kyc">KYC
+               <span>No</span>
+            Certified.</p>
+       </div>
+       <button type="button" class="popup_btn">Confirm</button>
+    </div>
+    <div class="modal_lookup_success influ modal">
+        <button type="button" class="close"></button>
+        <h4 class="title">HELLO!</h4>
+        <!-- 이메일 정보 받아오기 -->
+        <p class="lookup_success_email">K.flower8101@gmail.com</p>
+        <div class="lookup_success_bx">
+            <ul>
+                <li>
+                    <div class="title">Level
+                        <div class="tooltip">
+                            <div class="tooltip_bx">
+                                <span>LV1 : Sell LOA as well as $30,000 to $50,000 : You earn 3% of the sales volume</span>
+                                <span>LV2 : Sell LOA as well as $50,000 to $100,000 : You earn 5% of the sales volume</span>
+                                <span>LV3 : Sell LOA as well as $100,000 to $300,000 : You earn 7% of the sales volume</span>
+                                <span>LV4 : Sell LOA as well as more than $300,000 : You earn 10% of the sales volu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="info">3</span>
+                </li>
+                <li>
+                    <div class="title">Number of Applicants</div>
+                    <span class="info">5</span>
+                </li>
+                <li>
+                    <div class="title">Total Sale Quantity(LOA)</div>
+                    <span class="info">908,142</span>
+                </li>
+                <li>
+                    <div class="title">Estimated allowance(USD)
+                        <div class="tooltip usd">
+                                <div class="tooltip_bx">
+                                    <span>The total sales volume is converted into sales price (0.014 USD)</span>
+                                    <span>The amount calculated by applying a differential incentive per level</span>
+                                    <span>Example) Total Sale Quantity X 0.014USD X Level of incentives(%)</span>
+                                </div>
+                        </div>
+                    </div>
+                    <span class="info">$1,347</span>
+                </li>
+            </ul>
+        </div>
+        <div class="text_wrap">
+            <p>
+                <span>This is the quantity sold and the estimated allowance accordingly during the pre sale through your referral code.</span>
+            </p>
+            <p>
+                <span>On the nature of real-time transactions, It can take some time to reflect the history. Payments will be made sequentially within 5 business days of the end of the sale.</span>
+            <p>
+                <span>If you have any questions about the influencer marketing policy, Please contact us to<span class="point">support@loaprotocol.io</span></span>
+            </p>
+        </div>
+        </div>
+    <div class="pre-sale modal">
+        <button type="button" class="close"></button>
+        <h4 class="title">PRE-SALE The First Sales information</h4>
+        <div class="info_wrap">
+            <strong>Total cap = 100,000,000 LOA</strong>  
+            <span>Quantity distribution</span>
+            <span>Within 48 hours of initial listing on the main bourse : 40% of total purchases</span>
+            <span>Monthly since the listing of the first exchange : 6 months' installment payment of 10% of total purchases</span>
+        </div>
+    </div>
+
+    <section class="main-section section" id="main">    
+        <span class="star star1"></span>
+        <span class="star star2"></span>
+        <span class="star star3"></span>
+        <span class="star star4"></span>
+        <span class="star star5"></span>
+        <span class="star star6"></span>
+        <span class="star star7"></span>
+        <span class="star star8"></span>
+        <span class="star star9"></span>
+        <span class="star star10"></span>
+        <span class="star star11"></span>
+        <span class="star star12"></span>
+        <span class="star star13"></span>
+        <span class="star star14"></span>
+        <span class="star star15"></span>
+        <span class="star star16"></span>
+        <span class="star star17"></span>
+        <span class="star star18"></span>
+        <span class="star star19"></span>
+        <span class="star star20"></span>
+        <span class="star star21"></span>
+        <span class="star star22"></span>
+        <span class="star star23"></span>
+        <span class="star star24"></span>
+        <span class="star star25"></span>
+        <span class="star star26"></span>
+        <span class="star star27"></span>
+        <span class="star star28"></span>
+        <span class="star star29"></span>
+        <span class="star star30"></span>
+        <div class="contents">
+            <h1>A New Platform is Born.</h1>
+            <div style="display: block" class="time-wrap" id="timewrapnone">
+                <p class="time day" >00</p>
+                <span>:</span>
+                <p class="time hours">00</p>
+                <span>:</span>
+                <p class="time mins">00</p>
+                <span>:</span>
+                <p class="time secs">00</p>
+            </div>
+            <div style="display: none" class="time-wrap" id="currentTime">
+                <p class="time day" id="oday">00</p>
+                <span>:</span>
+                <p class="time hours" id="ohour">00</p>
+                <span>:</span>
+                <p class="time mins" id="omin">00</p>
+                <span>:</span>
+                <p class="time secs" id="osec">00</p>
+            </div> 
+            <ul class="btn-wrap clearfix">
+                <li><div class="btn btn1"><div class="wrap"><span>To Apply</span><img src="./images/right-btn.png" alt="apply"></div></div></li>
+                <li><div class="btn btn2"><div class="wrap"><span>To Query</span><img src="./images/right-btn.png" alt="lookup"></div></div></li>
+            </ul>
+            <p class="main-text">As the world-first general financing platform based on the blockchains, LOA (LOA-PROTOCOL) renders the effective and safe financial services on the basis of the C2C (Coiner to coiner lending) and P2P (Peer to peer lending) systems established.</p>
+            <div class="graph_wrap clearfix">
+                <div class="text-wrap">
+                    <span>PRE-SALE</span>
+                    <p>You can meet LOA earlier by way of PRE-SALE. The period for private sale is ticking. You can apply right now!
+                    </p>
+                </div>
+                <div class="line-wrap clearfix">
+                    <span>1 LOA = 0.014 USD</span>
+                    <span class="pre-sale-button">Distribution of quantity</span>
+                    <div class="wrap">
+                        <span class="line"></span>
+                        <span class="line drop-line"></span>
+                    </div>
+                    <p class="value">50%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-pg section" id="about">
+        <div class="contents clearfix">
+            <div class="text-wrap">
+                <h1>A New Financial Ecosystem 
+                    Created Together with LOA
+                </h1>
+                <p>A new world awaited by everybody unfolds.<br>Those who understand only the rules can never outdo those who make the rules.<br>The rules we make, the beginning of decentralization, LOA PROTOCOL.</p>
+                <a class="btn" href="https://www.youtube.com/channel/UCcReUg2evpIv9GwSW9BVaVg?view_as=subscriber" target="_blank"><div class="wrap"><span>YouTube Channel</span><img src="./images/right-btn.png" alt="shortcuts"></div></a>
+            </div>
+            <div class="video-wrap w-video">
+                <iframe src="https://www.youtube.com/embed/_Z0hqeRN2mk?&rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+            </div>      
+                <div class="video-wrap m-video">
+                        <iframe src="https://www.youtube.com/embed/gWtbZ2EYNng?&rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                </div>
+            </div>
+    </section>
+
+    <section class="technology-pg section" id="technology">
+            <span class="star star1"></span>
+            <span class="star star2"></span>
+            <span class="star star3"></span>
+            <span class="star star4"></span>
+            <span class="star star5"></span>
+            <span class="star star6"></span>
+            <span class="star star7"></span>
+            <span class="star star8"></span>
+            <span class="star star9"></span>
+            <span class="star star10"></span>
+            <span class="star star11"></span>
+            <span class="star star12"></span>
+            <span class="star star13"></span>
+            <span class="star star14"></span>
+            <span class="star star15"></span>
+            <span class="star star16"></span>
+            <span class="star star17"></span>
+            <span class="star star18"></span>
+            <span class="star star19"></span>
+            <span class="star star20"></span>
+            <span class="star star21"></span>
+            <span class="star star22"></span>
+            <span class="star star23"></span>
+            <span class="star star24"></span>
+            <span class="star star25"></span>
+            <span class="star star26"></span>
+            <span class="star star27"></span>
+            <span class="star star28"></span>
+            <span class="star star29"></span>
+            <span class="star star30"></span>
+        <div class="contents">
+            <h1>LOA SERVICE</h1>
+            <p class="main-text">LOA has the following allocation structure.</p>
+            <ul class="clearfix">
+                <li>
+                    <i><img src="./images/services1.png" alt="icon"></i>
+                    <h4>SAFETY</h4>
+                    <p>LOA provides the safe and fast financial services on top of the innovational solutions. </p>
+                </li>
+                <li>
+                    <i><img src="./images/services2.png" alt="icon"></i>
+                    <h4>CONVENIENCE</h4>
+                    <p>The assets of the customers are safely kept under custody by using the internal blockchain technology.</p>
+                </li>
+                <li>
+                    <i><img src="./images/services3.png" alt="icon"></i>
+                    <h4>LPM</h4>
+                    <p>The complicated off-line investment system is implemented by using the simplified online system.</p>
+                </li>
+                <li>
+                    <i><img src="./images/services4.png" alt="icon"></i>
+                    <h4>C2C</h4>
+                    <p>The automatic administration system to provide the analysis information about the details of assets and investment.</p>
+                </li>
+                <li>
+                    <i><img src="./images/services5.png" alt="icon"></i>
+                    <h4>P2P</h4>
+                    <p>The fast and safe investment & loan transactions secured by real properties and with the inconvenient and complicated procedures simplified.</p>
+                </li>
+                <li>
+                    <i><img src="./images/services6.png" alt="icon"></i>
+                    <h4>LDEX</h4>
+                    <p>The decentralized, convenient and safe environment is provided for DEX transactions</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-section section" id="matrix">
+        <div class="contents">
+            <h1>TOKEN MATRIX</h1>
+            <p class="main-text">LOA has the following allocation structure.</p>
+            <div class="wrap">
+                <ul class="clearfix">
+                    <li><img src="./images/gry.png" alt="그래프"><p>Token Chart</p></li>
+                    <li>· Sale (42%) <br> · LOA foundation (23%) <br> · Strategic partners (15%) <br> · Team (6%) <br> · Advisor (4%) <br> · Marketing (3%) <br> · Reserve (7%)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap-pg section" id="roadmap">
+            <a class="a11y" href=https://kor.pngtree.com>pngtree.com의 그래픽</a>
+            <img src="./images/start-line.png" class="star_line star_line2" alt="starline">
+            <img src="./images/start-line.png" class="star_line star_line3" alt="starline">
+        <div class="contents">
+            <h1>ROADMAP</h1>
+            <div class="wrap">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="text-wrap">
+                            <p class="sub-title">Jun. ~ Aug. 2019 Pre-sale</p>
+                            LOA progresses the pre-sale over two steps. As the sale offered before the Main-sale, the Pre-sale supplies LOA at a somewhat lower price. The Pre-sale is progressed by way of the private and public sales. Regarding the closing time of the sale, please make reference to the detailed schedule. While the Pre-sale is under progress, if the quantity allocated for sale is exhausted, the corresponding order of sale is terminated.
+                            <p class="note">* Depending on the type of sale, the lock-up period may be applicable and the relevant particulars may be confirmed through the detailed schedule for the corresponding order of sale.</p>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="text-wrap">
+                            <p class="sub-title">Aug. ~ Sep. 2019 Main-sale</p>
+                            LOA progresses the Main-sale over 3 steps. The Main-sale is divided into the first, second and third terms. Regarding the closing time of sale, please refer to the detailed schedule. While the Main-sale is under progress, if the quantity allocated for sale is exhausted, the corresponding order of sale is terminated.  
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Sep. 2019 Listing with the Exchange and Allocation of Tokens</p>
+                            <p class="cap">Listing with Exchange</p>
+                            LOA expects the initial listing with the exchange in September and the tokens will be allocated before the listing at the exchange. 
+                            <p class="cap">Allocation of Tokens</p>
+                            After all of LOA Sale is finished, the delivery of tokens is progressed in a sequential way from 48 hours before listing at the exchange. This is in order to minimize the losses of the investors which may arise through the over-the-counter transactions between individuals. 
+                            <p class="note">* Depending on the type of sale, the lock-up period may be applicable and the relevant particulars may be confirmed through the detailed schedule for the corresponding order of sale.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Oct. 2019 Launch of P2P System for Live Operation</p>
+                            As the first case to establish the integrated financial system based on LOA, the P2P investment platform is launched for live operation. In order to alleviate the high barriers to entry with the existing P2P loans, the procedures for credit inquiries and submission of documents are eliminated with the linkage established with the cryptocurrencies. The P2P system renders the services for investment and loans with the security of the real properties. The customers can easily take care of the related tasks such as the loans, repayment, investment, recovery of investment fund and others. Moreover, the customers can query and adjust their own financial investment portfolios on a real-time basis. 
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Nov. 2019 C2C</p>
+                            As the second stage for establishment of the integrated financial system, the C2C platform is the financial platform intended for resolution of the problems in the cryptocurrency markets with a high level of volatility in value. It presents the innovational business model of the cryptocurrencies by allowing the execution of investment and loan transactions on the basis of the cryptocurrencies, by guaranteeing the amount of interest at the time of withdrawal of the cryptocurrencies from the staking wallet, which is the key product in C2C platform, on the basis of the value at the time of investment placement and by allowing the expectation of additional profits from the appreciation of the deposit assets. 
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Dec. 2019 Provision of the Facilities for LDEX transactions, Entry into China and Other Asian Countries</p>
+                            <p class="cap">LDEX</p>
+                            With the operation of P2P and C2C systems based on LOA, the LOA Foundation provides the facilities for LDEX transactions in a bid to preserve the value of customers and to improve the convenience of customers. This can ensure the stability of asset protection through decentralization on the basis of the DEX transactions between individuals. In addition, since LSDT makes it possible to purchase LOA with the currencies of the different countries in the world, the access to LOA platform can be made far easier. 
+                            <p class="cap">Entry into China and Other Asian Countries</p>
+                            Since the LOA platform can now be utilized with the currencies of different countries by way of LSDT, the business territory is expanded to China and other Asian countries.   
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Q1 2020 Creation of the LOA Ecosystem</p>
+                            At present, number of projects and businesses attempting to establish the connections between the blockchains and the real-world economy is growing. Accordingly, each country in the world has enacted or is preparing the related laws and regulations and, in order to satisfy the requirements of the markets, LOA creates LOA-PURE (ecosystem) by combining each of the constituent platforms in an organic way.
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Q2 2020 Development of LOA CARD & LOA PAY Services</p>
+                            After expansion of the business territory to the Asian countries on the basis of the online platform, the usability of the system is enhanced by introducing LOA CARD and LOA PAY. LOA CARD allows the acquisition of the vendors where the LOA tokens can be used whereas LOA PAY provides the online vendors in association with different types of messenger and SNS channels and others.
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Q3 2020 Expansion of Off-line Businesses, Collaboration with Global Banks and Capital Businesses</p>
+                            By capitalizing on the enlarged business scope secured within the online spaces, the operation is expanded in the off-line financial industry. On the basis of the collaboration with the banks and the capital businesses from the institutional financial sector, the circulation market of the cryptocurrencies based on the blockchain and the off-line financial industry are integrated into a unity. 
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="text-wrap">
+                            <p class="sub-title">Q4 2020 Establishment of Internal Platform for Extending Credits and Receiving Savings</p>
+                            Following the integration with the financial industry through the cooperation with the banks and capital businesses, the internal platform for extension of credits and receiving of savings deposits is established. A new business model is presented by way of the platform which integrates the facilities for off-line financing, online cryptocurrencies and P2P connections. 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                  </div>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="date-wrap">
+                            <h3 class="date">2019.06~07</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2019.08~09</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2019.09</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2019.10</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2019.11</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2019.12</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2020.Q1</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2020.Q2</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2020.Q3</h3>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="date-wrap">
+                            <h3 class="date">2020.Q4</h3>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <p class="caption">* The roadmap of LOA is based on the entire process including the preparation, development, implementation and marketing. The project schedule is based on the estimation and may be subject to variations for diverse reasons. </p>
+        </div>
+    </section>
+
+    <section class="whitepaper-pg section" id="whitepaper">
+            <div class="contents">
+                <div class="top">
+                    <h1>WHITE PAPER</h1>
+                    <ul class="clearfix">
+                        <li><a href="./images/Loanprotocol_en.pdf" target="_blank">EN</a></li>
+                        <li><a href="./images/Loanprotocol_kr.pdf" target="_blank">/ KR</a></li>
+                        <li><a href="./images/Loanprotocol_cn.pdf" target="_blank">/ CN</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <h1>LIGHT PAPER</h1>
+                    <ul class="clearfix">
+                        <li><a href="./images/Loanprotocol_light_en.pdf" target="_blank">EN</a></li>
+                        <li><a href="./images/Loanprotocol_light_kr.pdf" target="_blank">/ KR</a></li>
+                        <li><a href="./images/Loanprotocol_light_cn.pdf" target="_blank">/ CN</a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="back"></div>
+    </section>
+
+    <section class="partner-pg" id="partner">
+        <div class="contents">
+            <h1>PARTNERSHIP</h1>
+            <p class="main-text">The partners cooperating with LOA are introduced.</p>
+            <ul>
+                <li><a href="#none"><img src="./images/part01.png" alt="partner shortcuts"></a></li>
+                <li><a href="http://www.weilaicaijing.com/" target="_blank"><img src="./images/part02.png" alt="partner shortcuts"></a></li>
+                <li><a href="#none"><img src="./images/part03.png" alt="partner shortcuts"></a></li>
+                <!-- <li><a href="https://hkba.hk.org" target="_blank"><img src="./images/part05.png" alt="partner shortcuts"></a></li> -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="press-pg">
+        <div class="contents">
+            <h1>PRESS</h1>
+            <p class="main-text">The followings are the press media partnering with LOA.</p>
+            <ul class="clearfix">
+                <li><a href="#none"><img src="./images/news01.png" alt="news"></a></li>
+                <li><a href="#none"><img src="./images/news02.png" alt="news"></a></li>
+                <li><a href="#none"><img src="./images/news03.png" alt="news"></a></li>
+                <li><a href="http://www.speconomy.com/news/newsview.php?ncode=1065580070591749" target="_blank"><img src="./images/news04.png" alt="news"></a></li>
+                <li><a href="#none"><img src="./images/news05.png" alt="news"></a></li>
+                <li><a href="#none"><img src="./images/news06.png" alt="news"></a></li>
+                <li><a href="http://newsbrite.net/96744" target="_blank"><img src="./images/news07.png" alt="news"></a></li>
+                <li><a href="http://m.datanet.co.kr/news/articleView.html?idxno=135167" target="_blank"><img src="./images/news08.png" alt="news"></a></li>
+                <li><a href="#none"><img src="./images/news09.png" alt="news"></a></li>
+                <li><a href="#none"><img src="./images/news10.png" alt="news"></a></li>
+            </ul>
+
+        </div>
+    </section>
+
+    
+    <section class="team" id="team">
+        <div class="contents">
+            <h1>TEAM</h1>
+            <p class="main-text">With the excellent performance outcomes, the LOA Team is introduced.</p>
+            <ul class="clearfix">
+                <li class="tam-list" data-target=".hover1">
+                    <div class="wrap">
+                        <img src="./images/team01.jpg" alt="team image">
+                        <div class="hover hover1">
+                            <p>· LS Partners CEO
+                                <br>
+                                · KB Customer Service Center Team Leader
+                                <br>
+                                · Hyundai Capital Mortgage Team Leader</p>
+                                <a class="icon" href="https://www.linkedin.com/in/ethan-han-209710188" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <h4>Ethan Han</h4>
+                    <P>CEO</P>
+                </li>
+                <li class="tam-list" data-target=".hover2">
+                        <div class="wrap">
+                            <img src="./images/team02.jpg" alt="team image">
+                            <div class="hover hover2">
+                                <p>· K Company Mainnet Coin CEO
+                                    <br>
+                                    · Etherium Hardfork Korea Team Lead Developer
+                                    <br>
+                                    · Chinese Crypto Exchange Company CEO</p>
+                                    <a class="icon" href="http://www.linkedin.com/in/LOACTO" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>Simon Kim</h4>
+                        <P>CTO</P>
+                </li>
+                <li class="tam-list" data-target=".hover3">
+                        <div class="wrap">
+                            <img src="./images/team03.jpg" alt="team image">
+                            <div class="hover hover3">
+                                <p>· PRINTF CO-FOUNDER
+                                    <br>
+                                    · Nexon Co. Ltd. F3 Game Director
+                                    <br>
+                                    · Naver Power Blogger Writer</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/kim-johnny-54297b141" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>Johnny Kim</h4>
+                        <P>CKO</P>
+                </li>
+                <li class="tam-list" data-target=".hover4">
+                        <div class="wrap">
+                            <img src="./images/team04.jpg" alt="team image">
+                            <div class="hover hover4">
+                                <p>· Hyundai Capital Finance Team
+                                    <br>
+                                    · LS Partners Executives
+                                    <br>
+                                    ·  K Finance Company Team Leader</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/william-han-0a8521188" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>William Han</h4>
+                        <P>COO</P>
+                </li>
+                <li class="tam-list" data-target=".hover5">
+                        <div class="wrap">
+                            <img src="./images/team05.jpg" alt="team image">
+                            <div class="hover hover5">
+                                <p>· Hyundai Capital Finance Team
+                                    <br>
+                                    · Pepper Savings Bank Finance Team
+                                    <br>
+                                    · KT&G System Security</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/charles-park-6644b5189" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>Charles Park</h4>
+                        <P>CFO</P>
+                </li>
+                <li class="tam-list" data-target=".hover6">
+                        <div class="wrap">
+                            <img src="./images/team06.jpg" alt="team image">
+                            <div class="hover hover6">
+                                <p>· LS Partners Assistant Manager
+                                    <br>
+                                    · K Finance Company Manager
+                                    <br>
+                                    · H Investment Company Fund Manager</p>
+                                    <a class="icon" href="http://linkedin.com/in/leo-song-410321189" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>Leo Song</h4>
+                        <P>Marketing Manager</P>
+                </li>
+                <li class="tam-list" data-target=".hover7">
+                        <div class="wrap">
+                            <img src="./images/team07.jpg" alt="team image">
+                            <div class="hover hover7">
+                                <p>· Lotte Card Next Generation Project Developer
+                                    <br>
+                                    · Lotte B2B Integrated Purchase System Operation
+                                    <br>
+                                    · CUBE REFUND Foreigner Tax Refunds System Operation</p>
+                                    <a class="icon" href="http://www.linkedin.com/in/david-jo-7b970b188" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>David Jo</h4>
+                        <P>Lead Developer</P>
+                </li>
+                <li class="tam-list" data-target=".hover8">
+                        <div class="wrap">
+                            <img src="./images/team08.jpg" alt="team image">
+                            <div class="hover hover8">
+                                <p>· Instead Savings Bank Loan Product Next Generation Developer
+                                    <br>
+                                    · NH Bank Transfer Process Next Generation Developer
+                                    <br>
+                                    · SBI Savings Bank Account Savings, Loan Relation Developer</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/corbin-park-198304189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>Corbin Park</h4>
+                        <P>Developer</P>
+                </li>
+                <li class="tam-list" data-target=".hover9">
+                        <div class="wrap">
+                            <img src="./images/team09.jpg" alt="team image">
+                            <div class="hover hover9">
+                                <p>· Starfield Records CEO
+                                    <br>
+                                    · FAB3 & StarField Films Director
+                                    <br>
+                                    · Baker.mov Director</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/kun-campbell-4ab2b7189" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>Kun Campbell</h4>
+                        <P>Post Production Supervisor</P>
+                </li>
+                <li class="tam-list" data-target=".hover10">
+                        <div class="wrap">
+                            <img src="./images/team10.jpg" alt="team image">
+                            <div class="hover hover10">
+                                <p>· Shinhan Bank Baseball Stadium UI Designer
+                                    <br>
+                                    · Korean Folk Village Marketplace UI/UX Designer
+                                    <br>
+                                    · Major Company Business Card UI/UX Design and Plan Participation</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/flower-kwon-898ba1189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>K.Flower</h4>
+                        <P>UI/UX Designer</P>
+                </li>
+                <li class="tam-list" data-target=".hover11">
+                        <div class="wrap">
+                            <img src="./images/team11.jpg" alt="team image">
+                            <div class="hover hover11">
+                                <p>· Aelf Coin Web Publisher
+                                    <br>
+                                    · M Blockchain Company Web Publisher
+                                    <br>
+                                    · K Finance Company Web Publisher</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/young-k-616317189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>K.Young</h4>
+                        <P>Lead Publisher</P>
+                </li>
+                <li class="tam-list" data-target=".hover12">
+                        <div class="wrap">
+                            <img src="./images/team12.jpg" alt="team image">
+                            <div class="hover hover12">
+                                <p>· L Invest Company Web Publisher
+                                    <br>
+                                    · K Invest Company Web Publisher
+                                    <br>
+                                    · H Invest Company Web Publisher</p>
+                                    <a class="icon" href="https://www.linkedin.com/in/yoon-p-b33316189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                        </div>
+                        <h4>P.Yoon</h4>
+                        <P>Publisher</P>
+                </li>
+            </ul>
+            <div class="swiper-container tam-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide tam-list" data-target=".hover1">
+                    <div class="wrap">
+                        <img src="./images/team01.jpg" alt="people">
+                        <div class="hover hover1">
+                            <p>· LS Partners CEO
+                                <br>
+                                · KB Customer Service Center Team Leader 
+                                <br>
+                                · Hyundai Capital Mortgage Team Leader</p>
+                                <a class="icon" href="https://www.linkedin.com/in/ethan-han-209710188" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                        </div>
+                        <h4>Ethan Han</h4>
+                        <P>CEO</P>
+                    </div>
+                  </div>
+                  <div class="swiper-slide tam-list" data-target=".hover2">
+                        <div class="wrap">
+                            <img src="./images/team02.jpg" alt="people">
+                            <div class="hover hover2">
+                                <p>· K Company Mainnet Coin CEO
+                                    <br>
+                                    · Etherium Hardfork Korea Team Lead Developer
+                                    <br>
+                                    · Chinese Crypto Exchange Company CEO</p>
+                                    <a class="icon" href="http://www.linkedin.com/in/LOACTO" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                            </div>
+                            <h4>Simon Kim</h4>
+                            <P>CTO</P>
+                        </div>
+                </div>
+                <div class="swiper-slide tam-list" data-target=".hover3">
+                    <div class="wrap">
+                        <img src="./images/team03.jpg" alt="people">
+                        <div class="hover hover3">
+                            <p>· PRINTF CO-FOUNDER
+                                <br>
+                                · Nexon Co. Ltd. F3 Game Director
+                                <br>
+                                · Naver Power Blogger Writer</p>
+                                <a class="icon" href="https://www.linkedin.com/in/kim-johnny-54297b141" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                        </div>
+                        <h4>Johnny Kim</h4>
+                        <P>CKO</P>
+                    </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover4">
+                <div class="wrap">
+                    <img src="./images/team04.jpg" alt="people">
+                    <div class="hover hover4">
+                        <p>· Hyundai Capital Finance Team
+                            <br>
+                            · LS Partners Executives
+                            <br>
+                            · K Finance Company Team Leader</p>
+                            <a class="icon" href="https://www.linkedin.com/in/william-han-0a8521188" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>William Han</h4>
+                    <P>COO</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover5">
+                <div class="wrap">
+                    <img src="./images/team05.jpg" alt="people">
+                    <div class="hover hover5">
+                        <p>· Hyundai Capital Finance Team
+                            <br>
+                            · Pepper Savings Bank Finance Team
+                            <br>
+                            · KT&G System Security</p>
+                            <a class="icon" href="https://www.linkedin.com/in/charles-park-6644b5189" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>Charles Park</h4>
+                    <P>CFO</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover6">
+                <div class="wrap">
+                    <img src="./images/team06.jpg" alt="people">
+                    <div class="hover hover6">
+                        <p>· LS Partners Assistant Manager
+                            <br>
+                            · K Finance Company Manager
+                            <br>
+                            · H Investment Company Fund Manager</p>
+                            <a class="icon" href="http://linkedin.com/in/leo-song-410321189" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>Leo Song</h4>
+                    <P>Marketing Manager</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover7">
+                <div class="wrap">
+                    <img src="./images/team07.jpg" alt="people">
+                    <div class="hover hover7">
+                        <p>· Lotte Card Next Generation Project Developer
+                            <br>
+                            · Lotte B2B Integrated Purchase System Operation
+                            <br>
+                            · CUBE REFUND Foreigner Tax Refunds System Operation</p>
+                            <a class="icon" href="http://www.linkedin.com/in/david-jo-7b970b188" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>David Jo</h4>
+                    <P>Lead Developer</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover8">
+                <div class="wrap">
+                    <img src="./images/team08.jpg" alt="people">
+                    <div class="hover hover8">
+                        <p>· Instead Savings Bank Loan Product Next Generation Developer
+                            <br>
+                            · NH Bank Transfer Process Next Generation Developer
+                            <br>
+                            · SBI Savings Bank Account Savings, Loan Relation Developer</p>
+                            <a class="icon" href="https://www.linkedin.com/in/corbin-park-198304189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>Corbin Park</h4>
+                    <P>Developer</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover9">
+                <div class="wrap">
+                    <img src="./images/team09.jpg" alt="people">
+                    <div class="hover hover9">
+                        <p>· Starfield Records CEO
+                            <br>
+                            · FAB3 & StarField Films Director
+                            <br>
+                            · Baker.mov Director</p>
+                            <a class="icon" href="https://www.linkedin.com/in/kun-campbell-4ab2b7189" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>Kun Campbell</h4>
+                    <P>Post Production Supervisor</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover10">
+                <div class="wrap">
+                    <img src="./images/team10.jpg" alt="people">
+                    <div class="hover hover10">
+                        <p>· Shinhan Bank Baseball Stadium UI Designer
+                            <br>
+                            · Korean Folk Village Marketplace UI/UX Designer
+                            <br>
+                            · Major Company Business Card UI/UX Design and Plan Participation</p>
+                            <a class="icon" href="https://www.linkedin.com/in/flower-kwon-898ba1189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>K.Flower</h4>
+                    <P>UI/UX Designer</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover11">
+                <div class="wrap">
+                    <img src="./images/team11.jpg" alt="people">
+                    <div class="hover hover11">
+                        <p>· Aelf Coin Web Publisher
+                            <br>
+                            · M Blockchain Company Web Publisher<br>
+                            · K Finance Company Web Publisher</p>
+                            <a class="icon" href="https://www.linkedin.com/in/young-k-616317189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>K.Young</h4>
+                    <P>Lead Publisher</P>
+                </div>
+            </div>
+            <div class="swiper-slide tam-list" data-target=".hover12">
+                <div class="wrap">
+                    <img src="./images/team12.jpg" alt="people">
+                    <div class="hover hover12">
+                        <p>· L Invest Company Web Publisher
+                            <br>
+                            · K Invest Company Web Publisher
+                            <br>
+                            · H Invest Company Web Publisher</p>
+                            <a class="icon" href="https://www.linkedin.com/in/yoon-p-b33316189/" target="_blank"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
+                    <h4>P.Yoon</h4>
+                    <P>Publisher</P>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- <section class="adventurer-pg section" id="adven">
+            <span class="star star1"></span>
+            <span class="star star2"></span>
+            <span class="star star3"></span>
+            <span class="star star4"></span>
+            <span class="star star5"></span>
+            <span class="star star6"></span>
+            <span class="star star7"></span>
+            <span class="star star8"></span>
+            <span class="star star9"></span>
+            <span class="star star10"></span>
+            <span class="star star11"></span>
+            <span class="star star12"></span>
+            <span class="star star13"></span>
+            <span class="star star14"></span>
+            <span class="star star15"></span>
+            <span class="star star16"></span>
+            <span class="star star17"></span>
+            <span class="star star18"></span>
+            <span class="star star19"></span>
+            <span class="star star20"></span>
+            <span class="star star21"></span>
+            <span class="star star22"></span>
+            <span class="star star23"></span>
+            <span class="star star24"></span>
+            <span class="star star25"></span>
+            <span class="star star26"></span>
+            <span class="star star27"></span>
+            <span class="star star28"></span>
+            <span class="star star29"></span>
+            <span class="star star30"></span>
+        <div class="contents">
+            <h1>ADVISOR</h1>
+            <p class="main-text">The best advisors are with us.</p>
+                <div class="wrap">
+                    <div class="swiper-container swiper-container1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="inner">
+                                    <img src="./images/adven01.jpg" alt="test">
+                                    <div class="text-wrap">
+                                        <span><strong>CEO</strong> Han Eunseong</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="inner">
+                                    <img src="./images/adven01.jpg" alt="test">
+                                    <div class="text-wrap">
+                                        <span><strong>CEO</strong> Han Eunseong</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="inner">
+                                    <img src="./images/adven01.jpg" alt="test">
+                                    <div class="text-wrap">
+                                        <span><strong>CEO</strong> Han Eunseong</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="inner">
+                                    <img src="./images/adven01.jpg" alt="test">
+                                    <div class="text-wrap">
+                                        <span><strong>CEO</strong> Han Eunseong</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, tempor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+    </section> -->
+
+    <footer>
+        <div class="contents">
+            <img src="./images/footer-logo.png" alt="simbol">
+                <ul class="clearfix">
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                    <li><a href="./terms.html">/ Terms of Service</a></li>
+                </ul>
+                <a class="mail" href="mailto:support@loaprotocol.io" target="_blank">support@loaprotocol.io</a>
+                <p>© LOA-PROTOCOL. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/english.js"></script>
+</body>
+</html>
